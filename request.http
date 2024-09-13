@@ -1,0 +1,17 @@
+GET http://localhost:2015/getUserById/MaickSouza
+
+###
+
+GET http://localhost:2015/getUserByEmail/MaickSouza
+###
+
+POST http://localhost:2015/createUser
+
+###
+
+PUT http://localhost:2015/updateUser/MaickSouza
+
+###
+
+DELETE http://localhost:2015/deleteUser/MaickSouza
+

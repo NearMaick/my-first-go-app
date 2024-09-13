@@ -7,7 +7,7 @@ import (
 type RestError struct {
 	Message string   `json: "message"`
 	Error   string   `json: "error"`
-	Code    int64    `json: "code"`
+	Code    int      `json: "code"`
 	Causes  []Causes `json: "causes"`
 }
 
@@ -16,7 +16,7 @@ type Causes struct {
 	Message string `json: "message"`
 }
 
-func NewRestErr(message, err string, code int64, causes []Causes) *RestError {
+func NewRestErr(message, err string, code int, causes []Causes) *RestError {
 	return &RestError{
 		Message: message,
 		Error:   err,
